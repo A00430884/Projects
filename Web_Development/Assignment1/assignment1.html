@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		
+
+<!-- JS -->
+        <script src="jquery-1.6.4.min.js"></script>
+        <script src="jquery.mobile-1.0.1.min.js"></script>
+		<script src = "display.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div data-role="page">
+	<div data-role"header" data-id="persistent" data-position="center" class="ui-btn-active ui-state-persist">
+	<h1>Simple Calculator</h1>
+	</div>
+	<!---<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active ui-state-persist">Information</a></li>
+		</ul>
+	</div>-->
+	<div data-role="content">
+		<h3>Enter Numbers</h3>
+		<label for="number1">Number1:</label>
+		<input type="number" name="number1" id="number1" placeholder="Whole number">
+		<label for="number2">Number2:</label>
+		<input type="number" name="number2" id="number2" placeholder="Whole number">
+		<br/>
+		<br/>
+		<!---<button onclick="display();">Display</button>-->
+	<div data-role="controlgroup" data-type="horizontal">
+		<button id="add" onclick="add();">Add</button>
+		<button id="sub" onclick="subtract();">Subtract</button>
+		<button id="mul" onclick="multiply();">Multiply</button>
+		<button id="div" onclick="divide();">Divide</button>
+	</div>
+	</div>
+	<br/>
+	<br/>
+	<table id="displayData">
+		<tr>
+		<td>Result:</td>
+		<td id="result">0</td>
+		</tr>
+	</table>
+	<div data-role="footer" data-id="persistent" data-position="fixed">
+		<h1> Cross-platform app developed by Darshan.</h1>
+	</div>
+</div>
+</body>
+</html>

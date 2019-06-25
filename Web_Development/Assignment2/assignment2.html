@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<!-- JS -->
+        <script src="jquery-1.6.4.min.js"></script>
+        <script src="jquery.mobile-1.0.1.min.js"></script>
+		<script src = "display.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div data-role="page">
+	<div data-role"header" data-id="persistent" data-position="fixed" class="ui-btn-active ui-state-persist">
+	<h1>Arrays and Table</h1>
+	</div>
+	<!---<div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active ui-state-persist">Information</a></li>
+		</ul>
+	</div>-->
+	<div data-role="content">
+		<h3>Enter Numbers</h3>
+		<label for="number1">Min:</label>
+		<input type="number" name="numberMin" id="min" placeholder="Whole number">
+		<label for="number2">Max:</label>
+		<input type="number" name="numberMax" id="max" placeholder="Whole number">
+		<br/>
+		<br/>
+		<button onclick="draw();">Draw</button>
+	</div>
+	<br/>
+	<table id="displayData">
+	</table>
+	<div data-role="footer" data-id="persistent" data-position="fixed">
+		<h1> Cross-platform app developed by Darshan.</h1>
+	</div>
+</div>
+</body>
+</html>
